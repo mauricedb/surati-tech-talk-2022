@@ -1,0 +1,11 @@
+
+
+<main class="row">
+	<h2>Movies</h2>
+
+	<div class="card-group">
+		{#each movies as movie}
+			<MovieCard {movie} />
+		{/each}
+	</div>
+</main>

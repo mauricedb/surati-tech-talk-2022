@@ -1,0 +1,667 @@
+[
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "package.json"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 10,
+		"column": 999
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/00-package.json.txt"
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "cypress.json"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/01-cypress.json.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "cypress.json"
+	},
+	{
+		"type": "goto",
+		"line": 2,
+		"column": 999
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/02-cypress.json.txt"
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "cypress/integration/navigation.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/03-navigation.spec.js.txt"
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "src/lib/Header.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/04-header.svelte.txt"
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "src/routes/__layout.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/05-__layout.svelte.txt"
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "cypress/integration/navigation.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 10,
+		"column": 999
+	},
+	{
+		"type": "typeText",
+		"text": ["", "        cy.title().should('eq', 'Movies');"]
+	},
+	{
+		"type": "goto",
+		"line": 16,
+		"column": 999
+	},
+	{
+		"type": "typeText",
+		"text": [
+			"",
+			"        cy.title().should('eq', 'About');",
+			"        cy.contains('h2', 'Maurice de Beijer').should('be.visible');"
+		]
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "src/routes/movies/index.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/06-__movies-index.svelte.txt"
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+
+	{
+		"type": "createFile",
+		"path": "src/routes/about.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/07-about.svelte.txt"
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "cypress/integration/navigation.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 11,
+		"column": 999
+	},
+	{
+		"type": "typeText",
+		"text": ["", "        cy.contains('h5', 'The Shawshank Redemption').should('be.visible');"]
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "src/lib/MovieCard.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/08-movie-card.svelte.txt"
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "src/routes/movies/index.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 1,
+		"column": 1
+	},
+	{
+		"type": "typeText",
+		"text": ["", "", ""]
+	},
+	{
+		"type": "goto",
+		"line": 1,
+		"column": 1
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/09-__movies-index.svelte.txt"
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 23,
+		"column": 999
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/10-__movies-index.svelte.txt"
+	},
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "cypress/integration/movies.api.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/11-movies.api.spec.js.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "src/routes/movies/index.json.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/12-index.json.js.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "src/routes/movies/index.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 1,
+		"column": 1
+	},
+	{
+		"type": "typeText",
+		"text": ["", "", ""]
+	},
+	{
+		"type": "goto",
+		"line": 1,
+		"column": 1
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/13-__movies-index.svelte.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "cypress/fixtures/movies.json"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/14-movies.fixture.json.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "cypress/integration/movies.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/15-movies.spec.js.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": ".github/workflows/cypress.yml"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/16-cypress.yml.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "cypress.json"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 5,
+		"column": 999
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/17-cypress.json.txt"
+	},
+
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": ".github/workflows/cypress.yml"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 23,
+		"column": 999
+	},
+	{
+		"type": "typeText",
+		"text": ["", "          record: true"]
+	},
+	{
+		"type": "goto",
+		"line": 26,
+		"column": 999
+	},
+	{
+		"type": "typeText",
+		"text": ["", "          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}"]
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "cypress/support/commands.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 26,
+		"column": 999
+	},
+	{
+		"type": "typeText",
+		"text": ["", "import '@testing-library/cypress/add-commands';"]
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "cypress/integration/with-testing-library.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/18-with-testing-library.spec.js.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "cypress/integration/with-testing-library.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 20,
+		"column": 999
+	},
+
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/19-with-testing-library.spec.js.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	}
+]

@@ -1,0 +1,20 @@
+
+
+	it('shows the movies', () => {
+		cy.intercept('/movies.json', { fixture: 'movies.json' }).as('movies.json');
+		cy.wait(500);
+		cy.findByRole('navigation').findByRole('link', { name: 'Movies' }).click();
+
+		cy.wait('@movies.json').then(({ response }) => {
+			const movies = response.body;
+
+			movies.forEach((movie, index) => {
+				cy.findAllByRole('article')
+					.eq(index)
+					.within(() => {
+						cy.findByText(movie.title).should('be.visible');
+						cy.findByText(movie.overview).should('be.visible');
+					});
+			});
+		});
+	});

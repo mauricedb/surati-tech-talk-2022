@@ -1,0 +1,21 @@
+/// <reference types="cypress" />
+
+describe('Using Testing Library', () => {
+	beforeEach(() => {
+		cy.visit('/');
+	});
+
+	it('can navigate to the movies page', () => {
+		cy.findByRole('navigation').findByRole('link', { name: 'Movies' }).click();
+		cy.title().should('eq', 'Movies');
+		cy.findByRole('main')
+			.findByRole('heading', { name: 'The Shawshank Redemption' })
+			.should('be.visible');
+	});
+
+	it('can navigate to the about page', () => {
+		cy.findByRole('navigation').findByRole('link', { name: 'About' }).click();
+		cy.title().should('eq', 'About');
+		cy.findByRole('main').findByRole('heading', { name: 'Maurice de Beijer' }).should('be.visible');
+	});
+});
