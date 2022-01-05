@@ -4,9 +4,9 @@ on:
   # Manual button click from the GitHub UI
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   start:
@@ -21,8 +21,10 @@ jobs:
         with:
           start: npm run dev
           wait-on: 'http://localhost:3000'
+          record: true
         env:
           VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       - name: Upload Cypress Videos
         uses: actions/upload-artifact@v2

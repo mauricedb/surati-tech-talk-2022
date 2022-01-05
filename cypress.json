@@ -2,5 +2,6 @@
 	"$schema": "https://on.cypress.io/cypress.schema.json",
 	"baseUrl": "http://localhost:3000/",
 	"ignoreTestFiles": ["**/1-*/*", "**/2-*/*"],
-	"pluginsFile": false
+	"pluginsFile": false,
+	"projectId": "8xsb53"
 }
